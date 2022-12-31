@@ -23,7 +23,7 @@ class Solution {
           ans =  ans.substring(1);
         
         return ans;
-    }
-        
     
-}
+        
+    }
+};
