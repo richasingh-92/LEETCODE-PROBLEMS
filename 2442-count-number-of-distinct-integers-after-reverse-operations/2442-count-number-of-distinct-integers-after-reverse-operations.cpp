@@ -1,16 +1,11 @@
 class Solution {
 public:
     int countDistinctIntegers(vector<int>& nums) {
-        
-        
     unordered_set<int> numsSet{begin(nums), end(nums)};
-
     for (const int num : nums)
       numsSet.insert(reversed(num));
-
-    return numsSet.size();
+        return numsSet.size();
   }
-
  private:
   int reversed(int num) {
     int ans = 0;
