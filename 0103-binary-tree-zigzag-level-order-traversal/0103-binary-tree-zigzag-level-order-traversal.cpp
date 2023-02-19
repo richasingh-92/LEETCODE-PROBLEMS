@@ -12,6 +12,7 @@
 class Solution {
 public:
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+    
          vector < vector < int >> result;
   if (root == NULL) {
     return result;
@@ -54,5 +55,5 @@ TreeNode * newNode(int data) {
 
     }
 };
+     
         
-    
