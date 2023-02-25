@@ -1,19 +1,16 @@
 class Solution {
-    public int maximumDifference(int[] nums) 
-    {
-        int min=nums[0];
-        int maxdiff=-1;
-        for(int i=1;i<nums.length;i++)
+public:
+    int maxProfit(vector<int>& prices) {
+        int maxprofit=0;
+        int n=prices.size();
+        int maxright=prices[n-1];
+       for(int i=n-2;i>=0;i--)
+        {
+         maxright=max(maxright,prices[i]);
+         maxprofit=max(maxprofit,maxright-prices[i]);
+        }
         
-            {
-               if(nums[i]<=min)
-                   min=nums[i];
-               else
-                   maxdiff=Math.max(maxdiff,nums[i]-min);
-            }
-       return maxdiff;
-       
+        return maxprofit;
     }
-}
-    
-
+};
+       
