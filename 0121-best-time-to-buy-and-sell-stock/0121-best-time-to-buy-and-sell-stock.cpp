@@ -1,4 +1,4 @@
-class Solution {
+/*class Solution {
 public:
     int maxProfit(vector<int>& prices) {
         int maxprofit=0;
@@ -11,6 +11,26 @@ public:
         }
         
         return maxprofit;
+    }
+};
+*/
+class Solution 
+{
+public:
+    int maxProfit(vector<int>& p) 
+    {
+        int buy=p[0];
+        int pro=0;
+        for(int i=1;i<p.size();i++)
+        {
+            if(p[i]<buy)
+            {
+                buy=p[i];
+            }
+            int diff=p[i]-buy;
+            pro=max(pro,diff);
+        }
+        return pro;
     }
 };
        
