@@ -9,7 +9,7 @@
  * };
  */
 
-        class Solution {
+         class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
         
@@ -24,4 +24,5 @@ public:
         return pre -> next;
     }
 };
+        
     
