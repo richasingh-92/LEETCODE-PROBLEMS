@@ -1,6 +1,7 @@
 public class Solution {
     // you need to treat n as an unsigned value
     public int hammingWeight(int n) {
+       
         
         int bits = 0;
         int mask = 1;
@@ -14,7 +15,5 @@ public class Solution {
     }
 }
 
-        
-        
         
     
