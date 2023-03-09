@@ -1,4 +1,5 @@
 class Solution {
+   
     public int singleNumber(int[] nums) {
 
         int output = nums[0];
@@ -9,5 +10,3 @@ class Solution {
     }
 }
         
-// only xor operation within loop 
-    
